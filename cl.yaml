@@ -2556,7 +2556,8 @@ proxy-groups:
   - warp_wireguard2
   - warp_wireguard3
   type: select
-- name: CF优选
+- interval: 600
+  name: CF优选
   proxies:
   - cf0
   - cf1
@@ -2688,7 +2689,9 @@ proxy-groups:
   - cf127
   - cf128
   - cf129
-  type: select
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
 - name: OVO
   proxies:
   - "剩余流量：83.38 GB\r"
@@ -2802,6 +2805,7 @@ proxy-groups:
   - "ES西班牙流媒体节点003\r"
   type: select
 rules:
+- DOMAIN-SUFFIX, youtube.com, CF优选
 - GEOIP,CN,DIRECT
 - MATCH,🌍选择代理节点
 unified-delay: true
