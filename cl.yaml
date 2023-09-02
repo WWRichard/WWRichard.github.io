@@ -42,7 +42,7 @@ proxies:
   - spdy/3.1
   congestion-controller: bbr
   disable-sni: true
-  name: tuic5JpChatGPT
+  name: ChatGPTtuic5Jp
   password: 5ff56de2-d583-4017-9e4a-4bc50e4240ff
   port: 36666
   reduce-rtt: true
@@ -2539,7 +2539,7 @@ proxy-groups:
   name: 自动选择
   proxies:
   - vless-wsCF优选
-  - tuic5JpChatGPT
+  - ChatGPTtuic5Jp
   - warp_wireguard1
   - warp_wireguard2
   - warp_wireguard3
@@ -2551,13 +2551,12 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - vless-wsCF优选
-  - tuic5JpChatGPT
+  - ChatGPTtuic5Jp
   - warp_wireguard1
   - warp_wireguard2
   - warp_wireguard3
   type: select
-- interval: 600
-  name: CF优选
+- name: CF优选
   proxies:
   - cf0
   - cf1
@@ -2689,9 +2688,7 @@ proxy-groups:
   - cf127
   - cf128
   - cf129
-  tolerance: 50
-  type: url-test
-  url: http://www.gstatic.com/generate_204
+  type: select
 - name: OVO
   proxies:
   - "剩余流量：83.38 GB\r"
@@ -2805,7 +2802,9 @@ proxy-groups:
   - "ES西班牙流媒体节点003\r"
   type: select
 rules:
-- DOMAIN-SUFFIX, youtube.com, CF优选
+- DOMAIN-KEYWORD, openai, ChatGPTtuic5Jp, REJECT
+- DOMAIN-KEYWORD, aliexpress, CF优选, OVO, 两元
+- DOMAIN-SUFFIX, youtube.com, CF优选, OVO, 两元
 - GEOIP,CN,DIRECT
 - MATCH,🌍选择代理节点
 unified-delay: true
