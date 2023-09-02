@@ -2804,7 +2804,6 @@ proxy-groups:
 rules:
 - DOMAIN-KEYWORD, openai, ChatGPTtuic5Jp, REJECT
 - DOMAIN-KEYWORD, aliexpress, CF优选, OVO, 两元
-- DOMAIN-SUFFIX, youtube.com, CF优选, OVO, 两元
 - GEOIP,CN,DIRECT
 - MATCH,🌍选择代理节点
 unified-delay: true
