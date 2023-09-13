@@ -37,6 +37,34 @@ proxies:
     headers:
       Host: edtunnel.364717863.workers.dev
     path: /?ed=2048
+- client-fingerprint: chrome
+  name: kkk_src
+  network: ws
+  port: 8080
+  server: sp.kjkkk.link
+  sni: kjkkk.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: false
+  uuid: 1f1720ff-30f4-44b0-a5f8-b15dfcee2f63
+  ws-opts:
+    headers:
+      host: kjkkk.364717863.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: kkk_cyou
+  network: ws
+  port: 443
+  server: kjkkk.oravps.cyou
+  sni: kjkkk.oravps.cyou
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1f1720ff-30f4-44b0-a5f8-b15dfcee2f63
+  ws-opts:
+    headers:
+      host: kjkkk.oravps.cyou
+    path: /?ed=2048
 - alpn:
   - h3
   - spdy/3.1
@@ -2546,11 +2574,13 @@ proxy-groups:
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
-- name: 🌍选择代理节点
+- name: 🌍手动
   proxies:
   - 自动选择
   - DIRECT
   - vless-wsCF优选
+  - kkk_src
+  - kkk_cyou
   - ChatGPTtuic5Jp
   - warp_wireguard1
   - warp_wireguard2
@@ -2805,5 +2835,5 @@ rules:
 - DOMAIN-KEYWORD, openai, ChatGPTtuic5Jp, REJECT
 - DOMAIN-KEYWORD, aliexpress, CF优选, OVO, 两元
 - GEOIP,CN,DIRECT
-- MATCH,🌍选择代理节点
+- MATCH,🌍手动
 unified-delay: true
