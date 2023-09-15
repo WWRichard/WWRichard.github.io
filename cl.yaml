@@ -105,6 +105,441 @@ proxies:
   server: 188.114.97.194
   type: wireguard
   udp: true
+- alterId: '0'
+  cipher: auto
+  name: 剩余流量：199.74 GB
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 套餐到期：2023-10-15
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 官网：xingsu.club
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 备用域名：xingsu.lol
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 美国01-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 美国02-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us7.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us7.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 美国03-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us8.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us8.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 美国04-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us9.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us9.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 美国05-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: us10.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: us10.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 加拿大01-普通-电信线路
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: ca2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: ca2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 日本03-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: jp8.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: jp8.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 日本04-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: jp9.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: jp9.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 日本05-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: jp10.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: jp10.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 香港01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: hk6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: hk6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 香港02-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: hk7.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: hk7.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 香港03-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: hk8.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: hk8.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 香港04-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: hk9.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: hk9.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 香港05-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: hk10.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: hk10.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 新加坡01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: sg6.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: sg6.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 新加坡02-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: sg7.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: sg7.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 新加坡03-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: sg8.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: sg8.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 新加坡04-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: sg9.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: sg9.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 新加坡05-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: sg10.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: sg10.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 台湾01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: tw2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: tw2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 越南01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: vn2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: vn2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 法国01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: fr2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: fr2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 英国01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: uk2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: uk2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 印度01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: in2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: in2.xingsu.fun
+    path: /xingsuyun
+- alterId: '0'
+  cipher: auto
+  name: 澳大利亚01-普通
+  network: ws
+  port: '80'
+  server: speedip.eu.org
+  servername: au2.xingsu.fun
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6363c328-3b36-4b1e-b6c0-6e3187d43df3
+  ws-opts:
+    headers:
+      Host: au2.xingsu.fun
+    path: /xingsuyun
 - name: cf0
   network: ws
   port: '80'
@@ -2566,6 +3001,7 @@ proxy-groups:
 - interval: 300
   name: 自动选择
   proxies:
+  - 星速云
   - vless-wsCF优选
   - kkk_src
   - kkk_cyou
@@ -2588,6 +3024,41 @@ proxy-groups:
   - warp_wireguard2
   - warp_wireguard3
   type: select
+- interval: 600
+  name: 星速云
+  proxies:
+  - 剩余流量：199.74 GB
+  - 套餐到期：2023-10-15
+  - 官网：xingsu.club
+  - 备用域名：xingsu.lol
+  - 美国01-普通-电信线路
+  - 美国02-普通-电信线路
+  - 美国03-普通-电信线路
+  - 美国04-普通-电信线路
+  - 美国05-普通-电信线路
+  - 加拿大01-普通-电信线路
+  - 日本03-普通
+  - 日本04-普通
+  - 日本05-普通
+  - 香港01-普通
+  - 香港02-普通
+  - 香港03-普通
+  - 香港04-普通
+  - 香港05-普通
+  - 新加坡01-普通
+  - 新加坡02-普通
+  - 新加坡03-普通
+  - 新加坡04-普通
+  - 新加坡05-普通
+  - 台湾01-普通
+  - 越南01-普通
+  - 法国01-普通
+  - 英国01-普通
+  - 印度01-普通
+  - 澳大利亚01-普通
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
 - name: CF优选
   proxies:
   - cf0
