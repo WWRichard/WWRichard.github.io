@@ -3016,6 +3016,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
+  - 星速云
   - vless-wsCF优选
   - kkk_src
   - kkk_cyou
