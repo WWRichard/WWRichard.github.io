@@ -16,6 +16,11 @@
         "version": "0.0.1"
       },
       {
+        "name": "HiFi",
+        "url": "https://wwrichard.github.io/music/hifini.js",
+        "version": "0.0.1"
+      },
+      {
         "name": "音悦台",
         "url": "https://gitee.com/maotoumao/MusicFreePlugins/raw/v0.1/dist/yinyuetai/index.js",
         "version": "0.0.1"
