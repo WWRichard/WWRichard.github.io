@@ -11,6 +11,11 @@
         "version": "0.2.2"
       },
       {
+        "name": "FreeMp3Cn",
+        "url": "https://wwrichard.github.io/music/freemp3cn.js",
+        "version": "0.0.1"
+      },
+      {
         "name": "歌曲宝",
         "url": "https://wwrichard.github.io/music/gequbao.js",
         "version": "0.0.1"
