@@ -16,6 +16,11 @@
         "version": "0.0.1"
       },
       {
+        "name": "Slider",
+        "url": "https://wwrichard.github.io/music/slider.js",
+        "version": "0.0.1"
+      },
+      {
         "name": "歌曲宝",
         "url": "https://wwrichard.github.io/music/gequbao.js",
         "version": "0.0.1"
