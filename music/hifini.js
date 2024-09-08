@@ -126,7 +126,7 @@ module.exports = {
     platform: "hifini", // 插件名
     version: "0.0.1", // 版本号
     author: "Ri",
-
+    srcUrl: "https://wwrichard.github.io/music/hifini.js",
     cacheControl: "no-store", // 我们可以直接解析出musicItem的结构，因此选取no-store就好了，当然也可以不写这个字段
     async search(query, page, type) {
         //const uu = encodeChineseURL(query)
