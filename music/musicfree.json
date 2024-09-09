@@ -1,7 +1,7 @@
 {
     "plugins": [
       {
-        "name": "网易云",
+        "name": "云云",
         "url": "https://wwrichard.github.io/music/wangyi.js",
         "version": "0.2.3"
       },
