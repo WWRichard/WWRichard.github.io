@@ -1,0 +1,997 @@
+allow-lan: true
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+  ipv6: true
+  listen: :53
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+global-client-fingerprint: chrome
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: piaosir_8880
+  network: ws
+  port: 8880
+  server: yx.piaosir.link
+  servername: piaosir.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4f79bace-4409-43e0-b99e-b998865ec4b0
+  ws-opts:
+    headers:
+      Host: piaosir.364717863.workers.dev
+    path: /?ed=2048
+- name: king360_8880
+  network: ws
+  port: 8880
+  server: cn.king360.eu.org
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: cfip_8880
+  network: ws
+  port: 8880
+  server: cfip.gay
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: skk_8880
+  network: ws
+  port: 8880
+  server: skk.moe
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: sskmore_80
+  network: ws
+  port: 80
+  server: skk.moe
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: sskmore_8880
+  network: ws
+  port: 8880
+  server: skk.moe
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: sskmore_2082
+  network: ws
+  port: 2082
+  server: skk.moe
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: sskmore_2095
+  network: ws
+  port: 2095
+  server: skk.moe
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: speedid_80
+  network: ws
+  port: 80
+  server: speedip.eu.org
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: speedid_8080
+  network: ws
+  port: 8080
+  server: speedip.eu.org
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: speedid_2052
+  network: ws
+  port: 2052
+  server: speedip.eu.org
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- name: speedid_2086
+  network: ws
+  port: 2086
+  server: speedip.eu.org
+  servername: yx0piaosir0link.364717863.workers.dev
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0dceab67-6795-4921-8d45-f3c1c8506eb2
+  ws-opts:
+    headers:
+      Host: yx0piaosir0link.364717863.workers.dev
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: kjkkk_cyou
+  network: ws
+  port: 443
+  server: kjkkk.oravps.cyou
+  sni: kjkkk.oravps.cyou
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1f1720ff-30f4-44b0-a5f8-b15dfcee2f63
+  ws-opts:
+    headers:
+      host: kjkkk.oravps.cyou
+    path: /?ed=2048
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: true
+  name: ChatGPTTuic5Jp
+  password: dfb43b2a-9458-4571-b4fb-b0b61cd63d2a
+  port: 22943
+  reduce-rtt: true
+  server: tuic5.69cn.cn
+  type: tuic
+  udp-relay-mode: native
+  uuid: dfb43b2a-9458-4571-b4fb-b0b61cd63d2a
+- ip: 172.16.0.2
+  ipv6: 2606:4700:110:894b:7449:360d:9c29:4580/128
+  name: warp_wg1
+  port: 3138
+  private-key: eC6XPoYJL3FBGU7AJjuPq2vmngxduyzW3D5E39FTIH0=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  server: 188.114.99.67
+  type: wireguard
+  udp: true
+- ip: 172.16.0.2
+  ipv6: 2606:4700:110:88c8:2e68:31ff:a6d4:9c6e/128
+  name: warp_wg2
+  port: 8742
+  private-key: yNvadI17hkS7E1/zU89hAmAbBGAE9vEwp4KIateNQXY=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  server: 162.159.192.129
+  type: wireguard
+  udp: true
+- ip: 172.16.0.2
+  ipv6: 2606:4700:110:8cca:248e:4087:7838:ebc3/128
+  name: warp_wireguard1
+  port: 1070
+  private-key: cEd9IHALG2FG6HyiPMoe8Ade7sStZPlquetBJVWJtVI=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  server: 162.159.192.129
+  type: wireguard
+  udp: true
+- ip: 172.16.0.2
+  ipv6: 2606:4700:110:8cca:248e:4087:7838:ebc3/128
+  name: warp_wireguard2
+  port: 3138
+  private-key: cEd9IHALG2FG6HyiPMoe8Ade7sStZPlquetBJVWJtVI=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  server: 162.159.195.112
+  type: wireguard
+  udp: true
+- ip: 172.16.0.2
+  ipv6: 2606:4700:110:8cca:248e:4087:7838:ebc3/128
+  name: warp_wireguard3
+  port: 3138
+  private-key: cEd9IHALG2FG6HyiPMoe8Ade7sStZPlquetBJVWJtVI=
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  server: 188.114.97.194
+  type: wireguard
+  udp: true
+- name: "剩余流量：100 GB\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "距离下次重置剩余：23 天\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "套餐到期：2024-08-20\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "1元100G https://ovofast.com\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "日本 - HY2 - 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "日本 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "日本 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: rb.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "新加坡 - HY2 - 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: sg.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "新加坡 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: sg.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "新加坡 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: sg.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印尼 - HY2- 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: id.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印尼 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: id.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印尼 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: id.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "澳大利亚 - HY2- 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: au.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "澳大利亚 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: au.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "澳大利亚 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: au.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印度 - HY2- 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: in.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印度 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: in.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "印度 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: in.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "美国 - HY2- 小妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50011'
+  server: us.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "美国 - HY2 - 中妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50022'
+  server: us.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "美国 - HY2 - 大妮妮\r"
+  password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e
+  port: '50033'
+  server: us.ovogood.xyz
+  sni: ovo.1234567890spcloud.com
+  type: hysteria2
+- name: "\U0001F1ED\U0001F1F0 香港核心 IEPL 01\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港核心 IEPL 02\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: hk1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港核心 IEPL 03\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1ED\U0001F1F0 香港核心 IEPL 04\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: hk2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 日本核心 IEPL 01\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 日本核心 IEPL 02\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: jp1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 日本核心 IEPL 03\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1EF\U0001F1F5 日本核心 IEPL 04\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: jp2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1F8\U0001F1EC 新加坡核心 IEPL 01\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1F8\U0001F1EC 新加坡核心 IEPL 02\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: sg1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1F8\U0001F1EC 新加坡核心 IEPL 03\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1F8\U0001F1EC 新加坡核心 IEPL 04\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: sg2.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 美国核心 IEPL 01\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 美国核心 IEPL 02\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 美国核心 IEPL 03\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: "\U0001F1FA\U0001F1F8 美国核心 IEPL 04\r"
+  password: 33074688-0b7e-4e35-a497-662a7135d4b9
+  port: '443'
+  server: us1.535eb521-9fe0-4478-b090-2a5cee4bb04a.191981000.xyz
+  skip-cert-verify: true
+  sni: 144-22-163-118.nhost.00cdn.com
+  type: trojan
+  udp: true
+- name: 0_优选
+  network: ws
+  port: '2053'
+  server: icook.tw
+  servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 1_优选
+  network: ws
+  port: '443'
+  server: cloudflare.cfgo.cc
+  servername: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 2_TW
+  network: ws
+  port: '443'
+  server: 35.206.248.146
+  servername: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 3_KR
+  network: ws
+  port: '46452'
+  server: 129.154.198.58
+  servername: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 4_KR
+  network: ws
+  port: '8443'
+  server: 132.145.91.171
+  servername: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 5_KR
+  network: ws
+  port: '443'
+  server: 34.22.100.72
+  servername: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 547c921f-c9b1-4d57-bb25-ff5c79749783.a09c5a67-316e-45c6-a051-e6066737fd47.theworkpc.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 6_KR
+  network: ws
+  port: '2083'
+  server: 132.145.93.198
+  servername: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 7_US
+  network: ws
+  port: '19944'
+  server: 173.242.116.24
+  servername: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 68123106-3e43-4958-b75a-b06e81eabf79.50d88e28-a870-497d-bf87-c20fb6802871.camdvr.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 8_US
+  network: ws
+  port: '443'
+  server: 129.146.46.164
+  servername: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 9_SG
+  network: ws
+  port: '2087'
+  server: 138.2.76.91
+  servername: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 10_SG
+  network: ws
+  port: '2087'
+  server: 152.69.215.14
+  servername: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 15212712-20f5-40a5-b9aa-8363e0130171.ee137666-1e0a-46db-bbd6-cc18f9841234.accesscam.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 11_SG
+  network: ws
+  port: '2087'
+  server: 138.2.80.183
+  servername: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 12_HK
+  network: ws
+  port: '2053'
+  server: 8.217.250.222
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 13_HK
+  network: ws
+  port: '2053'
+  server: 8.217.193.25
+  servername: fe9b5676-a2aa-4b6a-8257-cd2dd0910205.8c98ef2b-bee2-470b-b759-9f5efbc10812.freeddns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: fe9b5676-a2aa-4b6a-8257-cd2dd0910205.8c98ef2b-bee2-470b-b759-9f5efbc10812.freeddns.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 14_HK
+  network: ws
+  port: '2083'
+  server: 8.218.8.142
+  servername: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 15_HK
+  network: ws
+  port: '2096'
+  server: 8.217.250.222
+  servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 16_HK
+  network: ws
+  port: '8443'
+  server: 8.217.250.222
+  servername: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 17_HK
+  network: ws
+  port: '8443'
+  server: 8.217.193.25
+  servername: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 5ae52850-e7f0-481c-8cff-6c1ed17fd9f1.91f1a2e9-9f15-4330-996f-0b6bc7c8fa5b.theworkpc.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 18_HK
+  network: ws
+  port: '2083'
+  server: 8.217.193.25
+  servername: ceb98438-36f6-4f6c-9596-8d0409bbe285.b1e18cfc-f959-4f08-94da-4878c3cd4a5f.mywire.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: ceb98438-36f6-4f6c-9596-8d0409bbe285.b1e18cfc-f959-4f08-94da-4878c3cd4a5f.mywire.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 19_HK
+  network: ws
+  port: '2087'
+  server: 8.217.250.222
+  servername: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: fc071d49-af91-42d6-a20e-5a64e24a53bc.71a45835-dd0c-4d51-8bd4-9ccf9f223662.casacam.net
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 20_HK
+  network: ws
+  port: '8443'
+  server: 47.243.183.127
+  servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 21_HK
+  network: ws
+  port: '2083'
+  server: 47.243.183.127
+  servername: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 478a9f2a-0d66-4035-a797-06e9c83c6739.3869fe04-6fcd-4ad4-a8f4-40582f4fa0c4.giize.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 22_US
+  network: ws
+  port: '12345'
+  server: 38.47.104.75
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 23_JP
+  network: ws
+  port: '2053'
+  server: 47.74.13.66
+  servername: fe9b5676-a2aa-4b6a-8257-cd2dd0910205.8c98ef2b-bee2-470b-b759-9f5efbc10812.freeddns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: fe9b5676-a2aa-4b6a-8257-cd2dd0910205.8c98ef2b-bee2-470b-b759-9f5efbc10812.freeddns.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 24_JP
+  network: ws
+  port: '2053'
+  server: 47.91.19.249
+  servername: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 2022585a-86a7-4231-b3a0-eeda14f77f4d.8f18237c-8e5f-4ffb-a434-1b2948c87be3.ddnsfree.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 25_JP
+  network: ws
+  port: '2083'
+  server: 47.245.10.77
+  servername: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 8582b6f2-7192-4da8-a4cb-c480b71e6c58.e8e54e0f-6317-448a-9999-95f6e16f7117.ooguy.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 26_JP
+  network: ws
+  port: '2053'
+  server: 47.91.16.198
+  servername: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: a17cabb5-3f13-4056-b0ce-476143491d4b.blackbeautifulman.cloudns.org
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 27_JP
+  network: ws
+  port: '2083'
+  server: 8.209.243.172
+  servername: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 30388d70-6f5c-4d7c-8daa-9d3df7c5c526.9150e878-8296-4798-a172-c3fe66b8dee5.ddnsgeek.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 28_JP
+  network: ws
+  port: '2087'
+  server: 47.245.56.121
+  servername: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 3ca919ae-4e52-48cb-9f79-f920f0c234bd.b6071df2-af24-4fe5-a53c-5482f4bf5bce.kozow.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 29_JP
+  network: ws
+  port: '8443'
+  server: 47.74.34.38
+  servername: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: e130917c-1b58-4136-b2d9-76dc920e0add.add97ee8-0f14-48a3-b2cd-979c56742e64.loseyourip.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 30_JP
+  network: ws
+  port: '2083'
+  server: 47.91.10.228
+  servername: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: e8b99cbe-9ebd-4a20-a497-38f4b29f2c98.83b11782-ecae-411f-90c3-2a01bb33260a.gleeze.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- name: 31_JP
+  network: ws
+  port: '2053'
+  server: 47.91.14.69
+  servername: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 22762a0b-e897-48bd-86cc-42525e1256a6
+  ws-opts:
+    headers:
+      Host: 159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com
+    path: /mul-node-gpt-z.pages.dev//?ed=2048
+- { name: '剩余流量：100 GB', server: jp.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: 套餐到期：2025-09-22, server: jp.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '1元100G https://ovofast.com', server: jp.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '香港 - HY2 - 小妮妮', server: hk.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '香港 - HY2 - 中妮妮', server: hk.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '香港 - HY2 - 大妮妮', server: hk.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '日本 - HY2 - 小妮妮', server: jp.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '日本 - HY2 - 中妮妮', server: jp.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '日本 - HY2 - 大妮妮', server: jp.5188666.xyz, port: 61518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '新加坡 - HY2 - 小妮妮', server: sg.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '新加坡 - HY2 - 中妮妮', server: sg.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '新加坡 - HY2 - 大妮妮', server: sg.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '印尼 - HY2 - 小妮妮', server: id.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '印尼 - HY2 - 中妮妮', server: id.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '印尼 - HY2 - 大妮妮', server: id.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '悉尼 - HY2 - 小妮妮', server: au.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '悉尼 - HY2 - 中妮妮', server: au.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '悉尼 - HY2 - 大妮妮', server: au.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国 - HY2 - 小妮妮', server: us.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国 - HY2 - 中妮妮', server: us.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国 - HY2 - 大妮妮', server: us.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国原生 - HY2 - 小妮妮', server: uss.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国原生 - HY2 - 中妮妮', server: uss.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '美国原生 - HY2 - 大妮妮', server: uss.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '法国 - HY2 - 小妮妮', server: fr.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '法国 - HY2 - 中妮妮', server: fr.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '法国 - HY2 - 大妮妮', server: fr.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '德国 - HY2 - 小妮妮', server: de.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '德国 - HY2 - 中妮妮', server: de.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+- { name: '德国 - HY2 - 大妮妮', server: de.5188666.xyz, port: 60518, udp: true, skip-cert-verify: true, sni: ovo.1234567890spcloud.com, type: hysteria2, password: 34279209-1a79-4f7e-ae6d-f6c2dac7357e }
+proxy-groups:
+- interval: 300
+  name: 自动选择
+  proxies:
+  - cfip_8880
+  - skk_8880
+  - sskmore_8880
+  - sskmore_2082
+  - sskmore_2095
+  - sskmore_80
+  - speedid_80
+  - speedid_8080
+  - speedid_2052
+  - speedid_2086
+  - ChatGPTTuic5Jp
+  - kjkkk_cyou
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- { name: OvO, type: select, proxies: [自动选择, ChatGPTTuic5Jp ,'剩余流量：100 GB', 套餐到期：2025-09-22, '1元100G https://ovofast.com', '香港 - HY2 - 小妮妮', '香港 - HY2 - 中妮妮', '香港 - HY2 - 大妮妮', '日本 - HY2 - 小妮妮', '日本 - HY2 - 中妮妮', '日本 - HY2 - 大妮妮', '新加坡 - HY2 - 小妮妮', '新加坡 - HY2 - 中妮妮', '新加坡 - HY2 - 大妮妮', '印尼 - HY2 - 小妮妮', '印尼 - HY2 - 中妮妮', '印尼 - HY2 - 大妮妮', '悉尼 - HY2 - 小妮妮', '悉尼 - HY2 - 中妮妮', '悉尼 - HY2 - 大妮妮', '美国 - HY2 - 小妮妮', '美国 - HY2 - 中妮妮', '美国 - HY2 - 大妮妮', '美国原生 - HY2 - 小妮妮', '美国原生 - HY2 - 中妮妮', '美国原生 - HY2 - 大妮妮', '法国 - HY2 - 小妮妮', '法国 - HY2 - 中妮妮', '法国 - HY2 - 大妮妮', '德国 - HY2 - 小妮妮', '德国 - HY2 - 中妮妮', '德国 - HY2 - 大妮妮'] }
+rules:
+- DOMAIN-KEYWORD, oray.com,        DIRECT
+- DOMAIN-KEYWORD, oray.net,        DIRECT
+- DOMAIN-KEYWORD, 69cn.cn,         DIRECT
+- DOMAIN-KEYWORD, cloudflare.com,  DIRECT
+- DOMAIN-KEYWORD, freedidi.com,    DIRECT
+- IP-CIDR,192.168.200.0/24,        DIRECT
+- IP-CIDR,47.243.71.0/24,          DIRECT
+- DOMAIN-KEYWORD, openai, ChatGPTTuic5Jp
+- DOMAIN-KEYWORD, coze.com,   ChatGPTTuic5Jp
+- DOMAIN-KEYWORD, aliexpress, ChatGPTTuic5Jp
+- DOMAIN-KEYWORD, bing.com,   ChatGPTTuic5Jp
+- DOMAIN-KEYWORD, microsoft.com,  ChatGPTTuic5Jp
+- SRC-PORT,3389,DIRECT
+- DST-PORT,3389,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,OvO
+unified-delay: true
