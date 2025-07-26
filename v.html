@@ -53,37 +53,9 @@ proxies:
     - { name: '日本 樱花 新协议', type: anytls, server: tj-jp-1.aikunapp.com, port: 6001, password: 605c1d84-4cba-49e1-9d72-4efddfe2ef03, udp: true, client-fingerprint: chrome, skip-cert-verify: true, sni: bootcdn.xuexi.cn }
 
 
-    - {
-      name: kkk-tuic,
-      server: tuic5.69cn.cn,
-      port: 21000,
-      type: tuic,
-      uuid: 40219862-e46d-4de2-b447-156964807b09,
-      password:40219862-e46d-4de2-b447-156964807b09,
-      alpn: [h3],
-      disable-sni: true,
-      reduce-rtt: true,
-      udp-relay-mode:native,
-      congestion-controller: bbr,
-    }
-    - {
-      name: "美国住宅01",
-      type: socks5,
-      server: 38.135.190.192,
-      port: 35777,
-      username: dcefdb40,
-      password: d644973fd57b,
-      dialer-proxy: kkk-tuic,
-    }
-    - {
-      name: "日本住宅01",
-      type: socks5,
-      server: 43.231.190.215,
-      port: 9182,
-      username: S6q3p5I0k6i7,
-      password: M9W7A2j5E3g4,
-      dialer-proxy: kkk-tuic,
-    }
+    - { name: kkk-tuic,server: tuic5.69cn.cn,port: 21000,type: tuic,uuid: 40219862-e46d-4de2-b447-156964807b09,password:40219862-e46d-4de2-b447-156964807b09,alpn: [h3],disable-sni: true,reduce-rtt: true,udp-relay-mode:native,congestion-controller: bbr,}
+    - { name: "美国住宅01",type: socks5,server: 38.135.190.192,port: 35777,username: dcefdb40,password: d644973fd57b,dialer-proxy: kkk-tuic,}
+    - { name: "日本住宅01",type: socks5,server: 43.231.190.215,port: 9182,username: S6q3p5I0k6i7,password: M9W7A2j5E3g4,dialer-proxy: kkk-tuic,}
 proxy-groups:
     - { name: 三毛机场, type: select, proxies: [自动选择, 故障转移, "美国住宅01","日本住宅01","kkk-tuic",'剩余流量：59.42 GB', '距离下次重置剩余：7 天', 套餐到期：2026-04-02, '美国 pz (gpt优化)', '美国 rs 新协议', 2x专线-日本-1, '2x专线-日本-2 (新协议)', '2x专线-日本-3 (IPv6)', '2x专线-日本-4 (IPv6)', 2x专线-香港-1, '2x专线-香港-2 (新协议)', '2x专线-香港-3 (IPv6)', '2x专线-香港-4 (IPv6)', 2x专线-新加坡-1, '2x专线-新加坡-2 (新协议)', '2x专线-新加坡-3 (IPv6)', '2x专线-新加坡-4 (IPv6)', 如果很少节点可用，去官网更新软件, '美国 pz 电信优化', '美国 rs (gpt优化)', '美国 01（电信移动优化）', '美国 3（移动联通优化）', '加拿大 IPv6', '台湾(原生IP) 新协议', 台湾(原生IP), '加拿大 tls', '德国 tls', '加拿大 高速 cdn 1', '美国 高速 cdn 1', '加拿大 高速 cdn 2', '美国 高速 cdn 2', '日本 樱花 新协议'] }
     - { name: 自动选择, type: url-test, proxies: [ "美国住宅01","日本住宅01","kkk-tuic",'剩余流量：59.42 GB', '距离下次重置剩余：7 天', 套餐到期：2026-04-02, '美国 pz (gpt优化)', '美国 rs 新协议', 2x专线-日本-1, '2x专线-日本-2 (新协议)', '2x专线-日本-3 (IPv6)', '2x专线-日本-4 (IPv6)', 2x专线-香港-1, '2x专线-香港-2 (新协议)', '2x专线-香港-3 (IPv6)', '2x专线-香港-4 (IPv6)', 2x专线-新加坡-1, '2x专线-新加坡-2 (新协议)', '2x专线-新加坡-3 (IPv6)', '2x专线-新加坡-4 (IPv6)', 如果很少节点可用，去官网更新软件, '美国 pz 电信优化', '美国 rs (gpt优化)', '美国 01（电信移动优化）', '美国 3（移动联通优化）', '加拿大 IPv6', '台湾(原生IP) 新协议', 台湾(原生IP), '加拿大 tls', '德国 tls', '加拿大 高速 cdn 1', '美国 高速 cdn 1', '加拿大 高速 cdn 2', '美国 高速 cdn 2', '日本 樱花 新协议'], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
