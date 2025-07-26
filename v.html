@@ -53,8 +53,6 @@ proxies:
     - { name: '美国 高速 cdn 2', type: vless, server: cdncdncdn.aikunapp.com, port: 443, uuid: 605c1d84-4cba-49e1-9d72-4efddfe2ef03, alterId: 0, cipher: auto, udp: true, tls: true, client-fingerprint: chrome, skip-cert-verify: true, servername: r-eIkk32RjYpzovrLg.sm-node.com, network: ws, ws-opts: { path: '/vless_ws/smjc/index?ed=8192', headers: { Host: cdn-us.sm-node.com } }, ws-path: '/vless_ws/smjc/index?ed=8192', ws-headers: { Host: cdn-us.sm-node.com } }
     - { name: '日本 樱花 新协议', type: anytls, server: tj-jp-1.aikunapp.com, port: 6001, password: 605c1d84-4cba-49e1-9d72-4efddfe2ef03, udp: true, client-fingerprint: chrome, skip-cert-verify: true, sni: bootcdn.xuexi.cn }
 
-
-
     - { name: kkk-tuic,server: tuic5.69cn.cn,port: 21000,type: tuic,uuid: 40219862-e46d-4de2-b447-156964807b09,password: 40219862-e46d-4de2-b447-156964807b09,alpn: [h3],disable-sni: true,reduce-rtt: true,udp-relay-mode: native,congestion-controller: bbr}
     - { name: '美国住宅01',type: socks5,server: 38.135.190.192,port: 35777, username: dcefdb40, password: d644973fd57b, dialer-proxy: kkk-tuic}
     - { name: '日本住宅01',type: socks5,server: 43.231.190.215,port: 9182, username: S6q3p5I0k6i7, password: M9W7A2j5E3g4, dialer-proxy: kkk-tuic}
