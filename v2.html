@@ -49,7 +49,7 @@ proxies:
 
 
     - { name: 'hy2-1', type: hysteria2, server: 161.33.185.230, port: 28253, password: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', sni: www.bing.com, alpn: [h3], skip-cert-verify: true }
-    - { name: 'tuic-1', type: tuic, server: 161.33.185.230, port: 11670, uuid: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', password: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', tls: true, skip-cert-verify: true,  alpn: [h3], sni: www.bing.com, udp-relay-mode: native, congestion-controller: bbr }
+    - { name: 'tuic-1', type: tuic, server: 161.33.185.230, port: 11670, uuid: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', password: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', tls: true, skip-cert-verify: true, alpn: [h3], sni: www.bing.com, udp-relay-mode: native, congestion-controller: bbr }
     - { name: 'vmess-ws-tls-argo-1', type: vmess, server: yg1.ygkkk.dpdns.org, port: 443, uuid: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', alterId: 0, cipher: auto, udp: true, tls: true, network: ws, servername: jporacleyg.336697.xyz, client-fingerprint: chrome, ws-opts: { path: '/7a88d322-eb4a-4a59-8c62-8c60d76abf4b-vm?ed=2048', headers: { Host: jporacleyg.336697.xyz } } }
     - { name: 'vmess-ws-argo-1', type: vmess, server: yg6.ygkkk.dpdns.org, port: 80, uuid: '7a88d322-eb4a-4a59-8c62-8c60d76abf4b', alterId: 0, cipher: auto, udp: true, tls: false, network: ws, ws-opts: { path: '/7a88d322-eb4a-4a59-8c62-8c60d76abf4b-vm?ed=2048', headers: { Host: jporacleyg.336697.xyz } } }
     - { name: 'hy2-jp2', type: hysteria2, server: 168.138.194.92, port: 28253, password: '130ec091-df05-4af9-9695-dc982e98a8ec', sni: www.bing.com, alpn: [h3], skip-cert-verify: true }
